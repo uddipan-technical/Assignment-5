@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meal</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- CSS only -->
+    <title>Hungry-Monster</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-</head>
-<body>
-    <div class="input-search-container">
-        <input id="searchItem" type="text" placeholder="Search Your Meal" class="bigger-input">
-        <button onclick="inputFirstLetter()" type="button" id="search-text" class="btn btn-danger ">Search</button>
-    </div>
-    <div id="IngredientDiv"></div>
-    <div id="mealList"></div>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
     
-<script src="app.js"></script>
-</body>
+    <nav class="navbar navbar-light bg-light">
+
+      <div class="container-fluid flex flex">
+
+        <form class="d-flex flex" id="meal-submit">
+        
+          <input class="search-box" type="text" id="search" placeholder="Search for meal"/>
+          
+          <button class="btn btn-outline-success button search-btn" type="submit">
+            <i class="fa fa-search">Search</i>
+          </button>
+
+        </form>
+        
+       
+        
+      </div>
+      <div id="singleMeal"></div>
+  </nav>
+    
+    <header class="container">
+
+      
+
+      <div id="result-heading"></div>
+      <div id="mealTotal" class="meals"></div>
+
+     
+    </header>
+    
+
+
+    <script src="app.js"></script>
+    
+  </body>
 </html>
